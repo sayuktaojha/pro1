@@ -1,0 +1,589 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta name="description" content="">
+	<meta name="keywords" content="Bhagwati Manav Kalyan Sangthan, Param Pujya Sadguru Dev Paramahansa Yogiraj Shri Shaktiputra Maharaj, Siddhashram, 'Bharteeya Shakti Chetana Party"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Shaktiputra Maharaj</title>
+	<style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
+		body{
+			padding:0px;
+			margin:0px;
+			font-family:"Comic Sans MS", cursive, sans-serif;
+			color:white;
+			background-image: url("wallpaper1.jpg");
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		p{
+			text-align: justify;
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+		a{
+			color:white;
+			text-decoration: none;
+		}
+		.div2{
+			background-color: rgb(0,0,0,0.5);
+		}
+		.div3{
+			margin:0px auto 0px auto;
+			width:1300px;
+		}
+		.div4{
+			border:5px solid rgb(255,225,225,0.6);
+		}
+		.img1{
+			width:100%;
+			animation-duration: 1s;
+			animation-name: img1;
+		}
+		.header{
+			background-color: rgb(0,0,0,0.8);
+			width:100%;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.box{
+			width: 100%;
+			text-align: center;
+			overflow: hidden;
+			display: none;
+			animation-duration: 0.6s;
+			animation-name: box;
+		}
+		.show{
+			width:40%;
+			overflow: hidden;
+			text-align: center;
+		}
+		.showbox{
+			font-size: 50px;
+			background-color: transparent;
+			color:white;
+			cursor:pointer;
+			transition: 0.4s;
+			border:none;
+		}
+		.showbox:hover{
+			color:orange;
+		}
+		.button1{
+			padding: 25px;
+			font-size: 17px;
+			color:white;
+			border:none;
+			background-color: transparent;
+			cursor: pointer;
+			transition: 0.2s;
+		}
+		.button1:hover{
+			color:orange;
+			transform: scale(1.1);
+		}
+		.main1{
+			border:5px solid rgb(255,225,225,0.6);
+			background-color: rgb(0,0,0,0.8);
+			margin-top: 30px;
+			display: flex;
+			flex-wrap: wrap;
+		
+		}
+		h2{
+			text-align: center;
+			width:100%;
+		}
+		h1{
+			width: 100%;
+		}
+		.mainA{
+			width:70%;	
+		}
+		.mainC{
+			width: 100%;
+		}
+		hr{
+			color:rgb(255,225,225,0.6);
+		}
+		.allign{
+			width:100%;
+			text-align: center;
+		}
+		.sub{
+			visibility: hidden;
+			opacity: 0;
+			transform:scale(0);
+		}
+		.mainB{
+			width:30%;
+		}
+		.img2{
+			width:100%;
+		}
+		.subimg{
+			width:150px;
+		}
+		.button2{
+			padding:5px 40px 5px 40px;
+			font-size: 17px;
+			cursor: pointer;
+			color: white;
+			background-color: transparent;
+			border:2px solid white;
+			transition: 0.4s;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		.button2:hover{
+			color:orange;
+			border:2px solid orange;
+		}
+		.main2{
+			margin-top: 30px;
+			border:5px solid rgb(255,225,225,0.6);
+			background-color: rgb(0,0,0,0.8);
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.main2A{
+			width: 25%;
+			cursor:pointer;
+			text-align: center;
+		}
+		.gal{
+			padding-bottom: 5px;
+			padding-top: 5px;
+			width:96%;
+			transition: 0.4s;
+		}
+		.gal:hover{
+			opacity: 0.5;
+		}
+		.popupA{
+			position: fixed;
+			top:0px;
+			left:0px;
+			right:0px;
+			bottom: 0px;
+			background-color: rgb(0,0,0,0.9);
+			text-align: center;
+			display: none;
+		}
+		.popupA1{
+			display: inline-block;
+			position: relative;
+			top:3%;
+			border:5px solid rgb(255,225,225,0.6);
+		}
+		.next{
+			position: absolute;
+			top:0px;
+			right:0px;
+			font-size: 50px;
+			border:none;
+			padding: 10px 10px 10px 100px;
+			background-color: transparent;
+			color:white;
+			cursor:pointer;
+			transition: 0.4s;
+			height:100%;
+		}
+		.prev{
+			position: absolute;
+			top:0px;
+			left:0px;
+			font-size: 50px;
+			border:none;
+			padding: 10px 100px 10px 10px;
+			background-color:  transparent;
+			color:white;
+			cursor:pointer;
+			transition: 0.4s;
+			height:100%;
+		}
+		.next:hover{
+			font-size: 100px;
+		}
+		.prev:hover{
+			font-size: 100px;
+		}
+		.close{
+			font-size: 30px;
+			position: absolute;
+			top:-6px;
+			right:-5px;
+			border-radius: 50%;
+			background-color: rgba(0,0,0,0.9);
+			border:3px solid white;
+			color:white;
+			cursor:pointer;
+			transition: 0.4s;
+		}
+		.close:hover{
+			color:orange;
+			border-color: orange;
+			transform: scale(1.3);
+		}
+		.big{
+			animation-name: big;
+			animation-duration: 0.4s;
+		}
+		.footer{
+			margin-top: 30px;
+			border:5px solid rgb(255,225,225,0.6);
+		
+			background-color: rgb(0,0,0,0.8);
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.footA{
+			width:50%;
+			text-align: center;
+		}
+		.footB{
+			width:50%;
+			text-align: center;
+		}
+		.link{
+			font-size: 17px;
+			text-decoration: none;
+			color:orange;
+		}
+		.link:hover{
+			text-decoration: underline;
+		}
+		.fa {
+			padding:5px;
+			font-size: 25px;
+			text-align: center;
+			text-decoration: none;
+			border-radius: 20%;
+		}
+		.fa-facebook{
+			background: #3B5998;
+  			color: white;	
+		}
+		.fa-youtube {
+  			background: #bb0000;
+  			color: white;
+  		}
+  		h1{
+  			text-align: center;
+  		}
+  		.sakti{
+  			animation-name: sakti;
+  			animation-duration: 5s;
+  			animation-iteration-count: infinite;
+  			cursor:pointer;
+  			display: inline-block;
+  		}
+  		.footlastA{
+  			width:60%;
+  			overflow: hidden;
+  		
+  		}
+  		.footlastB{
+  			width:100%;
+  			overflow: hidden;
+  			text-align: center;
+  		}
+		@keyframes img1{
+			from{opacity: 0.5;}
+			to{opacity: 1;}
+		}
+		@keyframes big{
+			from{transform:scale(0);}
+			to{transform: scale(1);}
+		}
+		@keyframes sakti{
+			0%{transform: scale(0.5);}
+			50%{transform: scale(1.0);color:orange;}
+			100%{transform: scale(0.5);}
+		}
+		@keyframes box{
+			from{transform: scale(0);}
+			to{transform: scale(1);}
+		}
+
+		@media only screen and (max-width:1321px){
+			.div3{
+				width: 100%;
+			}
+			.mainA{
+				width:60%;	
+			}
+			.mainB{
+				width: 40%;
+			}
+			.big{
+				width:100%;
+			}
+  		}
+  		@media only screen and (max-width:939px){
+  			
+			.mainA{
+				width:100%;
+			}
+			.mainB{
+				width:100%;
+				text-align: center;
+			}
+			.img2{
+				width:50%;
+			}
+  		}
+  		@media only screen and (max-width:799px){
+  			.footlastA{
+  				width:100%;
+  				overflow: hidden;
+  				text-align: center;
+  			}
+  			.show{
+				width:100%;
+				overflow: hidden;
+				text-align: center;
+			}
+  			.main2A{
+  				width:50%;
+  			}
+  			.footA{
+  				width:100%;
+  			}
+  			.footB{
+  				width:100%;
+  			}
+  		}
+  		@media only screen and (max-width:550px){
+  			.button1{
+				padding: 20px;
+				font-size: 17px;
+				color:white;
+				border:none;
+				background-color: transparent;
+				cursor: pointer;
+				transition: 0.2s;
+				width:100%;
+			}
+		}
+		@media only screen and (max-width:375px){
+			.main2A{
+				width:100%;
+			}
+		}
+	</style>
+</head>
+<body>
+		<div class="div2">
+			<div class="header">
+				<div class="footlastA">
+					<a href="#div4"> <h2 class="sakti">Shaktiputra ji Maharaj</h2></a>
+				</div>
+				<div class="show">
+					<button class="showbox" onclick="f5()">+</button>
+				</div>
+				<div class="box">
+					<a href="#div4"><button class="button1" onclick="f6()" >HOME</button></a>
+					<a href="#main1"><button class="button1" onclick="f6()">ABOUT</button></a>
+					<a href="#main2"><button class="button1" onclick="f6()">PHOTO</button></a>
+					<a href="#footer"><button class="button1" onclick="f6()">CONTACT</button></a>
+				</div>
+			</div>	
+			<div class="div3">	
+				<div class="div4" id="div4">
+					<img class="img1" src="wallpaperE.jpg"/>
+					<img class="img1" src="wallpaperA.jpg"/>
+					<img class="img1" src="wallpaperB.jpg"/>
+					<img class="img1" src="wallpaperC.jpg"/>
+					<img class="img1" src="wallpaperD.jpg"/>
+				</div>
+				<div class=main1 id="main1">
+					<div class="mainA">
+						<h2>About</h2>
+						<hr/>
+						<p>Shri Shaktiputra ji Maharaj was born in agricultural Brahmin family on December 9, 1960 in Bhadrawas village of Fatehpur district in Uttar Pradesh.He was called by Ramvaran Shukla in his early life. He was drawn to spirituality since his childhood. His father name was Rambali Shukla, mother Ramkali Devi and he was the youngest of all his five brothers and two sisters.</p>
+						<p>Later he married Sushri Manorama Tripathi in 1984 and opened a business which he closed in 1987 eventually.</p>
+						<p>Paramhans Yogiraj Shri Shaktiputra Ji Maharaj is founder of 'Panchjyoti Shaktitirth Siddhashram', 'Bhagwati Manav Kalyan Sangthan' and 'Bharteeya Shakti Chetana Party' also he is known for 'A Truth and omnipotent Rishi', 'Yug Chetana Purush', 'Yog-Dhyan-Sadhana', 'Kundalini jagran', and 'Avatari Purush'.</p>	
+					</div>
+					<div class="mainB">
+						<img class="img2" src="003-Shaktiputra Ji Maharaj.jpg">
+					</div>
+					<div class="mainC">
+						<hr/>
+						<h2>Bhagwati Manav Kalyan Sangthan</h2>
+						<hr/>
+						<p>
+							Bhagwati Manav Kalyan Sangthan is Non-Governmental spritual Organization (NGO) formed in 2001 to eliminate the present state of Kaliyuga and bring new foundation of Satyuga.
+						</p>
+						<div class="sub">
+							<p>
+								Param Pujya Sadguru Dev Paramahansa Yogiraj Shri Shaktiputra  Maharaj formed the Bhagwati Human Welfare Organization commonly known as Bhagwati Manav Kalyan Sangthan to wipe off the horrors of kaliyuga. This Organization in also running in Kathmandu, Nepal on the blessing and direction of Param Pujya Sadguru Dev Paramahansa Yogiraj Shri Shaktiputra  Maharaj, and as a part of this community we are ready for any moment to help human change their bad behiviour and remove violence, evil, untouchability and caste system completely out of society.
+							</p>
+							<div class="allign">
+								<img class="subimg" src="logo.jpg"/>
+							</div>	
+						</div>
+							<div class="allign">
+								<button class="button2" onclick="f2()">+ More</button>	
+							</div>
+					</div>
+				</div>
+				
+				<div class="main2" id="main2">
+					<div class="main2A">
+						<img class="gal" src="012-Shaktiputra Ji Maharaj.jpg" onclick="change(0)"/>
+						<img class="gal" src="024-Shaktiputra Ji Maharaj.jpg" onclick="change(4)"/>
+						<img class="gal" src="015-Shaktiputra Ji Maharaj.jpg" onclick="change(8)"/>
+					</div>
+					<div class="main2A">
+						<img class="gal" src="028-Shaktiputra Ji Maharaj.jpg" onclick="change(1)"/>
+						<img class="gal" src="017-Shaktiputra Ji Maharaj.jpg" onclick="change(5)"/>
+						<img class="gal" src="026-Shaktiputra Ji Maharaj.jpg" onclick="change(9)"/>
+					</div>
+					<div class="main2A">
+						<img class="gal" src="022-Shaktiputra Ji Maharaj.jpg" onclick="change(2)"/>
+						<img class="gal" src="023-Shaktiputra Ji Maharaj.jpg" onclick="change(6)"/>
+						<img class="gal" src="014-Shaktiputra Ji Maharaj.jpg" onclick="change(10)"/>
+					</div>
+					<div class="main2A">
+						<img class="gal" src="001-Shaktiputra Ji Maharaj.jpg" onclick="change(3)"/>
+						<img class="gal" src="008-Shaktiputra Ji Maharaj.jpg" onclick="change(7)"/>
+						<img class="gal" src="016-Shaktiputra Ji Maharaj.jpg" onclick="change(11)"/>
+					</div>
+				</div>
+
+				<div class="footer" id="footer">
+					<h1>For more imformation<hr/></h1>
+						<div class="footA">
+							<h2>Visit out website</h2>
+							<a class="link" href="http://www.siddhashramdhaam.com/Siddhashram/">Siddhashramdhaam.com</a><br/>
+							<a class="link" href="http://www.bmks.in">Bmks.in</a>
+						</div>
+						<div class="footB">
+							<h2>Connect with us</h2>
+							<a href="https://www.facebook.com/bmksindia/" class="fa fa-facebook"></a>
+							<a href="https://www.youtube.com/channel/UC4SeWuWnOg8Q5F-7Lu1w-3A/feed"
+								class="fa fa-youtube"></a> <a href="https://www.youtube.com/channel/UC7QTJjqeBMemse7bxZecjeQ" class="fa fa-youtube"></a>
+						</div>
+					<div class="footlastB">
+						<a href="#div4"> <h2 class="sakti">Shaktiputra ji Maharaj</h2></a>
+					</div>
+				</div>
+			</div>
+		</div>	
+	<div class="popupA">
+		<div class="popupA1">
+			<img class="big" src="012-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="028-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="022-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="001-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="024-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="017-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="023-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="008-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="015-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="026-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="014-Shaktiputra Ji Maharaj.jpg"/>
+			<img class="big" src="016-Shaktiputra Ji Maharaj.jpg"/>
+			<button class="next" onclick="slide(+1)">&#8250</button>
+			<button class="prev" onclick="slide(-1)">&#8249</button>
+			<button class="close" onclick="f4()">X</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		num=0;
+		function f1(){
+			var x=document.getElementsByClassName('img1');
+			for(i=0;i<=x.length-1;i++){
+				x[i].style.display="none";
+			}
+			if(num>x.length-1){
+				num=0;
+			}
+			x[num].style.display="block";
+			setTimeout(f1,5000);
+			num=num+1;
+		}
+		f1();
+		function f2(){
+			var x=document.getElementsByClassName('sub')[0];
+			var y=document.getElementsByClassName('button2')[0];
+			if(x.style.visibility!="visible"){
+				x.style.visibility="visible";
+				x.style.opacity="1";
+				x.style.transform="scale(1.0)";
+				x.style.transition="0.6s";
+				y.innerHTML="- Less";
+				y.style.color="orange";
+				y.style.border="2px solid orange";
+			}
+			else{
+				x.style.visibility="hidden";
+				x.style.opacity="0";
+				x.style.transition="0.6s";
+				x.style.transform="scale(0)";
+				y.innerHTML="+ More";
+				y.style.color="";
+				y.style.border="";
+			}
+		}
+		imgnum=0;
+		 function change(n){
+		 	imgnum=n;
+		 	f3(imgnum);
+		 }
+		 function slide(n){
+		 	var x=document.getElementsByClassName('big');
+		 	imgnum=imgnum+n;
+		 	if(imgnum>x.length-1){
+		 		imgnum=0;
+		 		f3(imgnum);
+		 	}
+		 	else if(imgnum<0){
+		 		imgnum=x.length-1;
+		 		f3(imgnum);
+		 	}
+		 	else{
+		 		f3(imgnum);
+		 	}
+		 }
+		function f3(){
+			var x=document.getElementsByClassName('big');
+			var y=document.getElementsByClassName('popupA')[0];
+			y.style.display="block";
+			for(i=0;i<=x.length-1;i++)
+			{
+				x[i].style.display="none";
+			}
+			x[imgnum].style.display="block";
+		}
+		function f4(){
+			var x=document.getElementsByClassName('popupA')[0];
+			x.style.display="none";
+		}
+		function f5(){
+			var x=document.getElementsByClassName('box')[0];
+			var y=document.getElementsByClassName('showbox')[0];
+			if(x.style.display!="block"){
+				x.style.display="block";
+				y.innerHTML="-";
+				y.style.color="orange";
+			}
+			else{
+				x.style.display="none";
+				y.style.color="";
+				y.innerHTML="+";
+			}	
+		}
+		function f6(){
+			f5();
+		}
+	</script>
+</body>
+</html>
